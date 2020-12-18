@@ -1238,6 +1238,7 @@ footer .address-con{
   display: flex;
   flex-direction: row;
   color: #696868;
+  flex-wrap: wrap;
 }
 
 footer .address-con p{
