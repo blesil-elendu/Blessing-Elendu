@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ELENDU BLESSING CHINEMEREM</title>
+    <link rel="icon" type="image/png" href="/favicon.png"/>
 
 <!-- Google Fonts -->
   <!--<link
@@ -408,30 +409,30 @@
         <div class="section-heading">
             contact me
         </div>
-    
-        <form action="/my-handling-form-page" method="post">
+        
+        <form id="contact-form" name="sentMessage"  method="post">
             <p class="mg-bottom">Required fields are labelled with<span>"*"</span> .</p>
             <ul>
                 <li>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name"  required >
+                    <input type="text" id="name" name="user_name"  placeholder="Your name " required >
                     <span></span>
                 </li>
                 <li>
                     <label for="mail">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="_replyto" placeholder="Your email " required>
                     <span></span>
                 </li>
 
                 <li>
                     <label for="tel">Phone Contact:</label>
-                    <input type="tel" id="tel" name="tel">
+                    <input type="tel" id="tel" name="tel"  placeholder="Your Phone " required>
                 </li>
 
                 
                 <li>
                     <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message" > give us a detail Message</textarea>
+                    <textarea id="msg" name="message" placeholder="Your Message " required></textarea>
                 </li>
 
                 <li>
@@ -439,10 +440,12 @@
                     <input type="file" name="file" id="file" accept="image/*" multiple>
                 </li>
 
-                
-               
-                 <li class="button centered">
-                     <button type="submit" data-text="Send your message" class="primary-btn">
+                <input type="hidden" name="_next" value="response.html"/>
+                <input type="hidden" name="_subject" value="Website contact"/>
+                <input type="text" name="_gotcha" style="display: none;"/>
+                 
+                <li class="button centered">
+                     <button type="submit" data-text="Send your message" class="primary-btn mg-top">
                         <span>S</span>
                         <span>e</span>
                         <span>n</span>

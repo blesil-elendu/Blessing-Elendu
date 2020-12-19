@@ -33,51 +33,16 @@ window.addEventListener('load', function(){
 
 let mainNav = document.getElementById('js-menu');
 let navBarToggle = document.getElementById('js-navbar-toggle');
-
 navBarToggle.addEventListener('click', function () {
     
     mainNav.classList.toggle('active');
+    x.classList.toggle("change");
 });
 
+let navLinks = document.querySelector('.nav-links');
+navLinks.addEventListener('click', function(){
+    mainNav.classList.toggle('hide')
+})
 
-/*/ changing an image on click
-let myImg = document.querySelectorAll('img');
-
-myImg.onclick = function(){
-    let mySrc = myImg.getAttribute('src');
-    if(mySrc === "/assets/img/removed.png"){
-        myImg.setAttribute('src', "/assets/img/removed2.png");
-    }
-    else{
-        myImg.setAttribute('src', "/assets/img/removed.png")
-    }
-}
-
-// login code
-let myWelcome = document.getElementById('welcome');
-let mybutton = document.getElementById('login');
-
-function myUserName(){
-    let myName = prompt('Enter Your Name');
-    if(!myName){
-        myUserName();
-    }
-    else{
-       localStorage.setItem('name', myName);
-    myWelcome.textContent = 'Welcome to my Page' + ' ' + myName; 
-    }
-    
-}
-
-if(!localStorage.getItem('name')){
-    myUserName;
-}
-else{
-    let StoredName = localStorage.getItem('name');
-    myWelcome.textContent = 'Welcome to my Page,' + ' ' + StoredName
-}
-
-
-mybutton.onclick = function(){
-    myUserName();
-}*/
+let contactForm = document.getElementById('contact-form');
+contactForm.setAttribute('action', '//formspree.io/' + 'blesilelendu' + '@' + 'gmail' + '.' + 'com');
