@@ -44,5 +44,3 @@ navLinks.addEventListener('click', function(){
     mainNav.classList.toggle('hide')
 })
 
-let contactForm = document.getElementById('contact-form');
-contactForm.setAttribute('action', '//formspree.io/' + 'blesilelendu' + '@' + 'gmail' + '.' + 'com');
