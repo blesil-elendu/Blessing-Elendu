@@ -887,7 +887,7 @@ height: auto;
 --------------------------------------------------------------*/
 #services {
   width          : 100%;
-  background     : url("../img/services.jpeg") top center;
+  background     : url("../img/lap.jpg") top center;
   background-size: cover;
   position       : relative;
   height         : 1800px;
@@ -1092,10 +1092,57 @@ figure a{
   color: #fff;
 }
 
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+#portfolio {
+  width          : 100%;
+  background     : url("../img/services.jpeg") top center;
+  background-size: cover;
+  position       : relative;
+  height         : 500px;
+  background-attachment: fixed;
+ 
+}
+
+#portfolio:before {
+  content      : "";
+ 
+  background   : rgba(13, 20, 26, 0.95);
+  position     : absolute;
+  bottom       : 0;
+  top          : 0;
+  left         : 0;
+  right        : 0;
+}
+
+#portfolio h4{
+  margin: 0;
+  padding: 50px 0px;
+}
 
 
 
-  
+.custom-btn{
+  background-color: #0c0c0c;
+  color: rgb(255, 255, 255);
+    display: inline-block;
+    margin-top: 40px !important;
+    text-decoration: none;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    padding: 2px 15px;
+    background: rgb(0, 0, 0);
+    border-radius: 10rem !important;
+   }
+
+.custom-btn:hover{
+  box-shadow: 3px 2px 2px 1px #9e024b;
+  background-color: #1a1919;
+
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
