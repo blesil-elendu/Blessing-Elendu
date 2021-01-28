@@ -319,16 +319,16 @@ button, input, select, textarea {
   right          : 0;
   display        : flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   flex-direction : column;
   text-align     : right;
   height         : 100vh
 }
 
 .hero-container .hero-content{
-  width: 60%;
+  width: 80%;
   height: 100%;
-  padding-right: 2rem;
+
   position: absolute;
   top: 35%;
   text-align: center;
@@ -336,8 +336,8 @@ button, input, select, textarea {
 
 #home h1 {
   margin        : 0 0 10px 0;
-  font-size     : 48px;
-  font-weight   : 700;
+  font-size     : 42px;
+  font-weight   : 800;
   line-height   : 56px;
   text-transform: uppercase;
   color         : #fff;
@@ -682,7 +682,8 @@ button, input, select, textarea {
   #home h2 {
     font-size    : 18px;
     line-height  : 24px;
-    margin-bottom: 30px;
+    margin: 30px 0px;
+   
   }
 }
 
@@ -710,6 +711,12 @@ height: auto;
   height: auto;
   margin-bottom: 2rem;
   
+}
+.page-column p span{
+color: #9e024b;
+display: inline;
+padding-top: 0;
+font-weight: 700;
 }
 
 .page-column span{
@@ -791,6 +798,10 @@ height: auto;
   background: #3B5998;
   color: white;
 
+}
+
+.page-column p .fa-whatsapp{
+  color: #9e024b;
 }
 
 /* Twitter */
