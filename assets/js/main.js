@@ -8,8 +8,10 @@ navBarToggle.addEventListener('click', function () {
     x.classList.toggle("change");
 });
 
-/*let navLinks = document.querySelector('.nav-links');
-navLinks.addEventListener('click', function(){
+let navLinks = document.querySelectorAll('.nav-links');
+navLinks.forEach((item, index) => {
+item.addEventListener('click', function(){
     mainNav.classList.toggle('hide')
-})*/
+});
+});
 
