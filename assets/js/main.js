@@ -1,15 +1,15 @@
+// 1. We create a common function to toggle the js menu
+const toggleMenu = () =>{
+    document.getElementById('js-menu').classList.toggle('active');
+}
 
 
-let mainNav = document.getElementById('js-menu');
-let navBarToggle = document.getElementById('js-navbar-toggle');
-navBarToggle.addEventListener('click', function () {
-    
-    mainNav.classList.toggle('active');
-    x.classList.toggle("change");
+// 2. We toggle the js menu on bugger(i.e. js-navbar-toggle) click
+document.getElementById('js-navbar-toggle').addEventListener('click', toggleMenu);
+
+
+//3. We get all the navigation links
+document.querySelectorAll('a.nav-links').forEach((item, index, items) => {
+//     4. We add a click event listerner to all with the toggleMenu function we earlier created as callback
+    item.addEventListener('click', toggleMenu);
 });
-
-/*let navLinks = document.querySelector('.nav-links');
-navLinks.addEventListener('click', function(){
-    mainNav.classList.toggle('hide')
-})*/
-
